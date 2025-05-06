@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="24dp">
 
         <EditText
-            android:id="@+id/editNombre"
+            android:id="@+id/etNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nombre" />
 
         <EditText
-            android:id="@+id/editCelular"
+            android:id="@+id/etEdad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Celular"
-            android:inputType="phone" />
+            android:hint="Edad"
+            android:inputType="number" />
 
         <EditText
-            android:id="@+id/editCorreo"
+            android:id="@+id/etPeso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Correo"
-            android:inputType="textEmailAddress" />
+            android:hint="Peso (kg)"
+            android:inputType="numberDecimal" />
 
         <EditText
-            android:id="@+id/editDireccion"
+            android:id="@+id/etCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Dirección" />
+            android:hint="Correo" />
 
         <Button
             android:id="@+id/btnGuardar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Guardar Cliente" />
-
+            android:text="Guardar Cliente"
+            android:layout_marginTop="16dp"/>
     </LinearLayout>
 </ScrollView>
